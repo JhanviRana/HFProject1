@@ -41,7 +41,9 @@ int main()
 	return 0; 
 }
 
-O/P = ??
+O/P = 
+Constructor is executed
+Destructor is executed
 
 3.)
 
