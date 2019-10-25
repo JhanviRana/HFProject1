@@ -12,7 +12,10 @@ int main()
 	return 0; 
 }
 
-O/P = ??
+O/P = 
+13
+12
+//Null Character Is Counted in SizeOF Function
 
 2.)
 
