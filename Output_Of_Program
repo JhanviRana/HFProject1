@@ -77,4 +77,6 @@ getchar();
 return 0; 
 } 
 
-O/P =??
+O/P =
+i=10
+1=20
