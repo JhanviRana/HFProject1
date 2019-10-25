@@ -1,0 +1,75 @@
+
+1.)
+
+#include <iostream> 
+#include <string.h> 
+using namespace std; 
+
+int main() 
+{ 
+	cout << sizeof("GeeksforGeeks") << endl; 
+	cout << strlen("GeeksforGeeks"); 
+	return 0; 
+}
+
+O/P = ??
+
+2.)
+
+#include <iostream> 
+using std::cout; 
+class Test 
+{ 
+public: 
+	Test(); 
+	~Test(); 
+}; 
+Test::Test() 
+{ 
+	cout << "Constructor is executed\n"; 
+} 
+Test::~Test() 
+{ 
+	cout << "Destructor is executed\n"; 
+} 
+int main() 
+{ 
+	delete new Test(); 
+	return 0; 
+}
+
+O/P = ??
+
+3.)
+
+#include<iostream> 
+using namespace std; 
+
+class A { 
+public: 
+	A(int ii = 0) : i(ii) {} 
+	void show() { cout << "i = " << i << endl;} 
+private: 
+	int i; 
+}; 
+
+class B { 
+public: 
+	B(int xx) : x(xx) {} 
+	operator A() const { return A(x); } 
+private: 
+	int x; 
+}; 
+
+void g(A a) 
+{ a.show(); } 
+
+int main() { 
+B b(10); 
+g(b); 
+g(20); 
+getchar(); 
+return 0; 
+} 
+
+O/P =??
